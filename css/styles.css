@@ -179,7 +179,7 @@ img {
 }
 
 .nav__link:hover {
-    columns: var(--first-color-light);
+    color: var(--first-color-light);
 }
 
 .nav__logo,
@@ -337,7 +337,7 @@ img {
 }
 
 .button:hover {
-    border-color: var(--first-color-dark);
+    background-color: var(--first-color-dark);
 }
 
 .button-light {
@@ -376,7 +376,7 @@ img {
 
 .about__number {
     font-size: var(--h1-font-size);
-    columns: var(--first-color);
+    color: var(--first-color);
     display: block;
 }
 
@@ -393,7 +393,7 @@ img {
 
 .qualification__title {
     font-size: var(--h3-font-size);
-    columns: var(--first-color);
+    color: var(--first-color);
     margin-bottom: var(--mb-2);
     display: flex;
     align-items: center;
@@ -419,7 +419,7 @@ img {
 .qualification__icon,
 .qualification__work {
     font-size: var(--smaller-font-size);
-    columns: var(--first-color-light);
+    color: var(--first-color-light);
 }
 
 .qualification__work {
@@ -609,6 +609,7 @@ img {
 
 .contact__box:hover {
     box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+    cursor: pointer;
 }
 
 .contact__inputs {
@@ -628,7 +629,7 @@ img {
     width: 100%;
     padding: 1rem;
     border: 2px solid var(--first-color-light);
-    columns: var(--first-color);
+    color: var(--first-color);
     border-radius: .5rem;
     margin-bottom: var(--mb-1);
 }
@@ -766,50 +767,52 @@ img {
         text-align: initial;
     }
 
-    .about__img{
+    .about__img {
         width: 300px;
     }
 
-    .qualification__box{
+    .qualification__box {
         display: flex;
         justify-content: space-between;
     }
 
     .services__container,
-    .portfolio__container{
+    .portfolio__container {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .project__container{
+    .project__container {
         padding: 4.5rem 0;
     }
 
-    .project__data{
+    .project__data {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
 
-    .project__icon, .project__title, .project__description{
+    .project__icon,
+    .project__title,
+    .project__description {
         margin-bottom: 0;
     }
 
-    .project__icon{
+    .project__icon {
         font-size: 6rem;
     }
 
-    .project__title{
+    .project__title {
         font-size: 2.5rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .bd-container{
+    .bd-container {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .qualification__container{
+    .qualification__container {
         column-gap: 6rem;
     }
 }
