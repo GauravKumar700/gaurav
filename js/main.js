@@ -117,3 +117,47 @@ gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 2, delay: 1.5, y: 
 gsap.from('.nav__item', { opacity: 0, duration: 2, delay: 1.8, y: 25, ease: 'expo.out', stagger: .2 })
 
 gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25, ease: 'expo.out', stagger: .2 })
+
+
+/*========= OPEN MAIL ==========*/
+
+function openEmail() {
+    // Replace 'recipient@example.com' with the target email address
+    var recipientEmail = 'gauravkumar7004515@gmail.com';
+
+    // Use the mailto: protocol to open the default email client
+    var mailtoLink = 'mailto:' + recipientEmail;
+
+    // Open the default email client with the pre-filled recipient email address
+    window.location.href = mailtoLink;
+}
+
+/*========= OPEN PHONE ==========*/
+
+function openDialpad() {
+    // Replace '+1234567890' with the target phone number
+    var phoneNumber = '+917004515369';
+
+    // Use the tel: protocol to open the phone dialer
+    var telLink = 'tel:' + phoneNumber;
+
+    // Open the phone dialer with the pre-filled phone number
+    window.location.href = telLink;
+}
+
+/*========= OPEN MAP ==========*/
+
+function openGoogleMaps() {
+    // Replace the address with the target location
+    var address = 'Roorkee Institute of Technology, Puhana - Jhabrera Rd, Nanheda Anantpur, Uttarakhand 247668';
+    // var address = 'WR4P+8X Nanheda Anantpur, Uttarakhand';
+
+    // Encode the address for the URL
+    var encodedAddress = encodeURIComponent(address);
+
+    // Create the Google Maps URL with the encoded address
+    var mapsUrl = 'https://www.google.com/maps?q=' + encodedAddress;
+
+    // Open Google Maps with the specified address
+    window.open(mapsUrl, '_blank');
+}
