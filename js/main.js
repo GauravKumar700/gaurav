@@ -118,7 +118,6 @@ gsap.from('.nav__item', { opacity: 0, duration: 2, delay: 1.8, y: 25, ease: 'exp
 
 gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25, ease: 'expo.out', stagger: .2 })
 
-
 /*========= OPEN MAIL ==========*/
 
 function openEmail() {
@@ -136,10 +135,10 @@ function openEmail() {
 
 function openDialpad() {
     // Replace '+1234567890' with the target phone number
-    var phoneNumber = '+917004515369';
+    const phoneNumber = '+917004515369';
 
     // Use the tel: protocol to open the phone dialer
-    var telLink = 'tel:' + phoneNumber;
+    const telLink = 'tel:' + phoneNumber;
 
     // Open the phone dialer with the pre-filled phone number
     window.location.href = telLink;
@@ -149,15 +148,29 @@ function openDialpad() {
 
 function openGoogleMaps() {
     // Replace the address with the target location
-    var address = 'Roorkee Institute of Technology, Puhana - Jhabrera Rd, Nanheda Anantpur, Uttarakhand 247668';
+    const address = 'Roorkee Institute of Technology, Puhana - Jhabrera Rd, Nanheda Anantpur, Uttarakhand 247668';
     // var address = 'WR4P+8X Nanheda Anantpur, Uttarakhand';
 
     // Encode the address for the URL
-    var encodedAddress = encodeURIComponent(address);
+    const encodedAddress = encodeURIComponent(address);
 
     // Create the Google Maps URL with the encoded address
-    var mapsUrl = 'https://www.google.com/maps?q=' + encodedAddress;
+    const mapsUrl = 'https://www.google.com/maps?q=' + encodedAddress;
 
     // Open Google Maps with the specified address
     window.open(mapsUrl, '_blank');
+}
+
+/*========= OPEN WHAT'S APP ==========*/
+
+function openWhatsApp() {
+    // Replace '+1234567890' with the target WhatsApp number
+    const phoneNumber = '+917004515369';
+    // https://wa.me/1XXXXXXXXXX
+
+    // Create the WhatsApp URL with the pre-filled message
+    const whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=Hello%20there!';
+
+    // Open WhatsApp with the specified number and pre-filled message
+    window.open(whatsappUrl, '_blank');
 }
