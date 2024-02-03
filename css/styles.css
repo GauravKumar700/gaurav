@@ -363,6 +363,11 @@ img {
     background: none;
 }
 
+.home__button {
+    width: fit-content;
+    height: fit-content;
+}
+
 /*===== ABOUT =====*/
 .about__data {
     text-align: center;
