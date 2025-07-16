@@ -502,8 +502,12 @@ img {
 }
 
 .portfolio__content {
+    flex: 1 1 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #FFF;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
 }
@@ -515,11 +519,10 @@ img {
 }
 
 .portfolio__data {
-    padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-grow: 1;
+    padding: 1.5rem;
 }
 
 .portfolio__title {
@@ -532,6 +535,20 @@ img {
     font-size: var(--small-font-size);
     color: var(--first-color-light);
     margin: var(--mb-2) 0;
+
+    /* flex-grow: 1;
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem; */
+}
+
+.portfolio__data .button {
+    align-self: center;
+    /* or center if you prefer */
+    margin-top: auto;
+    /* this pushes it to bottom */
+    white-space: nowrap;
 }
 
 .portfolio__content:hover {
