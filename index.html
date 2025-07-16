@@ -66,9 +66,12 @@
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class="bx bxl-facebook-square"></i></a>
-                    <a href="" class="home__social-icon"><i class="bx bxl-instagram"></i></a>
-                    <a href="" class="home__social-icon"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/gaurav700/" target="_blank" class="home__social-icon"><i
+                            class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/GauravKumar700" target="_blank" class="home__social-icon"><i
+                            class="bx bxl-github"></i></a>
+                    <a href="mailto:gauravkumar70045415@gmail.com" target="_blank" class="home__social-icon"><i
+                            class="bx bxl-gmail"></i></a>
                 </div>
 
                 <div class="home__img">
@@ -294,11 +297,13 @@
                     </a>
                     <div class="portfolio__data">
                         <h2 class="portfolio__title">IdeaEngine</h2>
-                        <a href="#">
-                            <h2 class="portfolio__subtitle">
-                                Presenting You the IdeaEngine. Road of Success of your Buisness.
-                            </h2>
-                        </a>
+                        <!-- <a href="#"> -->
+                        <h2 class="portfolio__subtitle">
+                            IdeaEngine guides your business journey by asking key questions about your goals and
+                            budget.
+                            It generates a personalized success roadmap using our machine learning algorithm.
+                        </h2>
+                        <!-- </a> -->
                         <a href="https://ideaenginee.vercel.app/" class="button">view Details</a>
                     </div>
                 </div>
@@ -311,7 +316,8 @@
                         <h2 class="portfolio__title">InternConnect</h2>
                         <a href="#">
                             <h2 class="portfolio__subtitle">
-                                New portfolio of work done for a client
+                                InternConnect helps students find internships and companies hire talent effortlessly.
+                                A streamlined platform connecting interns and recruiters in one place.
                             </h2>
                         </a>
                         <a href="#" class="button">view Details</a>
@@ -381,7 +387,7 @@
         </section>
 
         <!--===== TESTIMONIAL =====-->
-        <section class="testimonial section bd-container">
+        <!-- <section class="testimonial section bd-container">
             <span class="section-subtitle">My client saying</span>
             <h2 class="section-title">Testimonial</h2>
 
@@ -419,7 +425,7 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </section>
+        </section> -->
 
         <!--===== CONTACTME =====-->
         <section class="contact section bd-container" id="contact">
@@ -448,10 +454,10 @@
                         </span>
                     </div>
 
-                    <div class="contact__box">
-                        <i class="bx bx-chat contact__icon"></i>
+                    <div class="contact__box" onclick="openWhatsApp()">
+                        <i class="bx bxl-whatsapp contact__icon"></i>
                         <h3 class="contact__title">Chat</h3>
-                        <div>
+                        <!-- <div>
                             <a href="#" class="contact__social" onclick="openWhatsApp()">
                                 <i class="bx bxl-whatsapp-square"></i>
                             </a>
@@ -463,24 +469,25 @@
                             <a href="#" class="contact__social">
                                 <i class="bx bxl-messenger"></i>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <form action="" class="contact__form">
-                    <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input" />
-                        <input type="email" placeholder="Email" class="contact__input" />
-                        <input type="password" name="password" style="display: none" />
-                    </div>
+                    <!-- <div class="contact__inputs"> -->
+                    <input type="text" name="name" id="name" placeholder="Name" class="contact__input" />
+                    <input type="email" name="email" id="email" placeholder="Email" class="contact__input" />
+                    <!-- <input type="password" name="password" style="display: none" /> -->
+                    <!-- </div> -->
 
-                    <div class="contact__inputs">
-                        <input type="text" placeholder="Project" class="contact__input" />
-                        <input type="number" placeholder="Number" class="contact__input" />
-                    </div>
+                    <!-- <div class="contact__inputs"> -->
+                    <input type="text" name="subject" id="subject" placeholder="Subject" class="contact__input" />
+                    <!-- <input type="number" placeholder="Number" class="contact__input" /> -->
+                    <!-- </div> -->
 
-                    <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
-                    <input type="submit" value="Send Message" class="button contact__button" />
+                    <textarea name="message" id="message" cols="0" rows="7" placeholder="Message"
+                        class="contact__input"></textarea>
+                    <input type="submit" id="button" value="Send Message" class="button contact__button" />
                 </form>
             </div>
         </section>
@@ -495,14 +502,14 @@
             </p>
 
             <div class="footer__social">
-                <a href="#" class="footer__link">
+                <a href="https://www.linkedin.com/in/gaurav700/" target="_blank" class="footer__link">
                     <i class="bx bxl-linkedin"></i>
                 </a>
-                <a href="#" class="footer__link">
+                <a href="https://github.com/GauravKumar700" target="_blank" class="footer__link">
                     <i class="bx bxl-github"></i>
                 </a>
-                <a href="#" class="footer__link">
-                    <i class="bx bxl-dribbble"></i>
+                <a href="mailto:gauravkumar70045415@gmail.com" target="_blank" class="footer__link">
+                    <i class="bx bxl-gmail"></i>
                 </a>
             </div>
             <p class="footer__copy">&#169; 2024 gaurav. All right reserved</p>
@@ -520,6 +527,11 @@
 
     <!--===== MAIN JS =====-->
     <script src="js/main.js"></script>
+
+    <!-- Email.js -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- <script type="text/javascript">emailjs.init('gtKtVdiRtFbwercWi')</script> -->
+    <script src="js/email.js"></script>
 </body>
 
 </html>

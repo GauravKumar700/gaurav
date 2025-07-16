@@ -510,6 +510,7 @@ img {
 
 .portfolio__img {
     width: 100%;
+    height: auto;
     transition: .4s;
 }
 
@@ -587,9 +588,16 @@ img {
 
 .contact__content {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    word-wrap: break-word;
 }
 
 .contact__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    word-break: break-word;
     background-color: #FFF;
     border-radius: .5rem;
     padding: 1.5rem;
@@ -786,8 +794,7 @@ img {
         justify-content: space-between;
     }
 
-    .services__container,
-    .portfolio__container {
+    .services__container {
         grid-template-columns: repeat(3, 1fr);
     }
 
