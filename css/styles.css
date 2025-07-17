@@ -306,13 +306,15 @@ img {
     bottom: 0;
 }
 
-.home__img img {
+/* .home__img img {
     width: 240px;
-}
+    width: max-content;
+} */
 
 .home__social {
     display: flex;
     flex-direction: column;
+    padding-bottom: 15rem;
 }
 
 .home__social-icon {
@@ -723,9 +725,9 @@ img {
 
 /*===== MEDIA QUERIES =====*/
 @media screen and (min-width: 576px) {
-    .home__img img {
+    /* .home__img img {
         width: 330px;
-    }
+    } */
 
     .about__container,
     .qualification__container,
@@ -787,6 +789,7 @@ img {
     .home__social {
         flex-direction: row;
         align-items: center;
+        padding-bottom: 0;
     }
 
     .home__social-icon {
