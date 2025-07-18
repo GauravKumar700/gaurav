@@ -300,6 +300,27 @@ img {
     margin-bottom: var(--mb-3);
 }
 
+/* Typing cursor effect */
+.home__profession-text::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    margin-left: 5px;
+    color: var(--first-color-lighten);
+    /* Adjust as per your theme */
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
 .home__img {
     position: absolute;
     right: 0;
