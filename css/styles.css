@@ -433,6 +433,67 @@ img {
     display: block;
 }
 
+/* Skills */
+.skills__data {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+    flex: 0 0 auto;
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 250px;
+    transition: 0.3s ease-in-out; */
+
+    padding: 3rem 1rem;
+    background-color: #FFF;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .4s ease-in-out;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+}
+
+.skills__data:hover {
+    transform: translateY(-.5rem);
+    box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+}
+
+.skills__icon {
+    font-size: 3rem;
+}
+
+.skills__icon,
+.skills__title {
+    margin-bottom: var(--mb-2);
+    color: var(--first-color);
+}
+
+.skills__title {
+    font-size: var(--h3-font-size);
+}
+
+.skills__description {
+    margin-bottom: var(--mb-4);
+}
+
+.skills__bar {
+    background-color: rgba(123, 111, 113, 0.7);
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+.skills__percentage {
+    display: block;
+    height: 100%;
+    background-color: var(--first-color);
+    border-radius: 4px;
+}
+
 /*===== SERVICES =====*/
 .services__data {
     padding: 3rem 1rem;
@@ -732,7 +793,8 @@ img {
     .about__container,
     .qualification__container,
     .services__container,
-    .portfolio__container {
+    .portfolio__container,
+    .skills__container {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -812,6 +874,10 @@ img {
     .qualification__box {
         display: flex;
         justify-content: space-between;
+    }
+
+    .skills__container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .services__container {

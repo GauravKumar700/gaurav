@@ -61,8 +61,18 @@ function scrollTop() {
         scrollTop.classList.remove('show-scroll')
     }
 }
-
 window.addEventListener('scroll', scrollTop)
+
+// Toggle Button for Show more skills
+// function scrollSkills(direction) {
+//     const container = document.getElementById('skillsScroll');
+//     const scrollAmount = 300;
+
+//     container.scrollBy({
+//         left: direction === 'left' ? -scrollAmount : scrollAmount,
+//         behavior: 'smooth',
+//     });
+// }
 
 /*===== MIXITUP FILTER PORTFOLIO =====*/
 const mixer = mixitup('.portfolio__container', {
