@@ -88,7 +88,7 @@
 
         <!--===== ABOUT =====-->
         <section class="about section bd-container" id="about">
-            <span class="section-subtitle">My history</span>
+            <!-- <span class="section-subtitle">My history</span> -->
             <h2 class="section-title">About me</h2>
 
             <div class="about__container bd-grid">
@@ -268,6 +268,19 @@
                 </div>
 
                 <div class="skills__data">
+                    <i class="bx bx-code-block skills__icon"></i>
+                    <h3 class="skills__title">Next.js</h3>
+                    <p class="skills__description">
+                        Built fast, SEO-friendly, and scalable web apps using Next.js, integrating server-side rendering
+                        and dynamic
+                        routing.
+                    </p>
+                    <div class="skills__bar">
+                        <span class="skills__percentage" style="width: 85%"></span>
+                    </div>
+                </div>
+
+                <div class="skills__data">
                     <i class="bx bxl-nodejs skills__icon"></i>
                     <h3 class="skills__title">Node.js & Express</h3>
                     <p class="skills__description">
@@ -315,21 +328,67 @@
                     </div>
                 </div>
 
-                <!-- <div class="skills__data">
+                <div class="skills__data">
                     <i class="bx bx-image-alt skills__icon"></i>
                     <h3 class="skills__title">Cloudinary</h3>
                     <p class="skills__description">
-                        Used Cloudinary for image hosting, transformation, and delivery in web apps with focus on
+                        Used Cloudinary for <br> image hosting, transformation, and delivery in web apps with focus on
                         performance.
                     </p>
                     <div class="skills__bar">
                         <span class="skills__percentage" style="width: 80%"></span>
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
 
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio section bd-container" id="portfolio">
+            <span class="section-subtitle">My recent works</span>
+            <h2 class="section-title">Portfolio</h2>
 
+            <!-- <div class="portfolio__nav">
+                <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+                <span class="portfolio__item" data-filter=".web">Web</span>
+                <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
+                <span class="portfolio__item" data-filter=".app">App</span>
+            </div> -->
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__content mix web">
+                    <a href="https://ideaenginee.vercel.app/">
+                        <img src="img/work1.jpg" alt="Project Image" class="portfolio__img" />
+                    </a>
+                    <div class="portfolio__data">
+                        <h2 class="portfolio__title">IdeaEngine</h2>
+                        <!-- <a href="#"> -->
+                        <h2 class="portfolio__subtitle">
+                            IdeaEngine guides your business journey by asking key questions about your goals and
+                            budget.
+                            It generates a personalized success roadmap using our machine learning algorithm.
+                        </h2>
+                        <!-- </a> -->
+                        <a href="https://ideaenginee.vercel.app/" class="button">view Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix web">
+                    <a href="#">
+                        <img src="img/work2.jpg" alt="Project Image" class="portfolio__img" />
+                    </a>
+                    <div class="portfolio__data">
+                        <h2 class="portfolio__title">InternConnect</h2>
+                        <!-- <a href="#"> -->
+                        <h2 class="portfolio__subtitle">
+                            InternConnect helps students find internships and companies hire talent effortlessly.
+                            A streamlined platform connecting interns and recruiters in one place.
+                        </h2>
+                        <!-- </a> -->
+                        <a href="#" class="button">view Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--===== SERVICES =====-->
         <section class="services section bd-container" id="services">
@@ -388,114 +447,6 @@
                         <a href="#contact" class="button button-white">Hire me</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!--===== PORTFOLIO =====-->
-        <section class="portfolio section bd-container" id="portfolio">
-            <span class="section-subtitle">My recent works</span>
-            <h2 class="section-title">Portfolio</h2>
-
-            <!-- <div class="portfolio__nav">
-                <span class="portfolio__item active-portfolio" data-filter="all">All</span>
-                <span class="portfolio__item" data-filter=".web">Web</span>
-                <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
-                <span class="portfolio__item" data-filter=".app">App</span>
-            </div> -->
-
-            <div class="portfolio__container bd-grid">
-                <div class="portfolio__content mix web">
-                    <a href="https://ideaenginee.vercel.app/">
-                        <img src="img/work1.jpg" alt="" class="portfolio__img" />
-                    </a>
-                    <div class="portfolio__data">
-                        <h2 class="portfolio__title">IdeaEngine</h2>
-                        <!-- <a href="#"> -->
-                        <h2 class="portfolio__subtitle">
-                            IdeaEngine guides your business journey by asking key questions about your goals and
-                            budget.
-                            It generates a personalized success roadmap using our machine learning algorithm.
-                        </h2>
-                        <!-- </a> -->
-                        <a href="https://ideaenginee.vercel.app/" class="button">view Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix web">
-                    <a href="#">
-                        <img src="img/work2.jpg" alt="" class="portfolio__img" />
-                    </a>
-                    <div class="portfolio__data">
-                        <h2 class="portfolio__title">InternConnect</h2>
-                        <!-- <a href="#"> -->
-                        <h2 class="portfolio__subtitle">
-                            InternConnect helps students find internships and companies hire talent effortlessly.
-                            A streamlined platform connecting interns and recruiters in one place.
-                        </h2>
-                        <!-- </a> -->
-                        <a href="#" class="button">view Details</a>
-                    </div>
-                </div>
-                <!-- 
-                <div class="portfolio__content mix ux">
-                    <a href="#">
-                        <img src="img/work3.jpg" alt="" class="portfolio__img" />
-                    </a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Ux Design</span>
-                        <a href="#">
-                            <h2 class="portfolio__title">
-                                New portfolio of work done for a client
-                            </h2>
-                        </a>
-                        <a href="#" class="button button-link">view Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix ux">
-                    <a href="#">
-                        <img src="img/work4.jpg" alt="" class="portfolio__img" />
-                    </a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Ux Design</span>
-                        <a href="#">
-                            <h2 class="portfolio__title">
-                                New portfolio of work done for a client
-                            </h2>
-                        </a>
-                        <a href="#" class="button button-link">view Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix app">
-                    <a href="#">
-                        <img src="img/work5.jpg" alt="" class="portfolio__img" />
-                    </a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Mobile App</span>
-                        <a href="#">
-                            <h2 class="portfolio__title">
-                                New portfolio of work done for a client
-                            </h2>
-                        </a>
-                        <a href="#" class="button button-link">view Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix app">
-                    <a href="#">
-                        <img src="img/work6.jpg" alt="" class="portfolio__img" />
-                    </a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Mobile App</span>
-                        <a href="#">
-                            <h2 class="portfolio__title">
-                                New portfolio of work done for a client
-                            </h2>
-                        </a>
-                        <a href="#" class="button button-link">view Details</a>
-                    </div>
-                </div> -->
             </div>
         </section>
 
@@ -611,7 +562,7 @@
         <div class="footer__container bd-container">
             <h1 class="footer__title">Gaurav Kumar</h1>
             <p class="footer__description">
-                I am Gaurav Kumar and this is my personal website, consult me here.
+                I'm Gaurav — a full-stack developer, freelancer & lifelong learner. Thanks for visiting my portfolio!
             </p>
 
             <div class="footer__social">
@@ -625,7 +576,7 @@
                     <i class="bx bxl-gmail"></i>
                 </a>
             </div>
-            <p class="footer__copy">&#169; 2024 gaurav. All right reserved</p>
+            <p class="footer__copy">&#169; 2025 Gaurav.</p>
         </div>
     </footer>
 
