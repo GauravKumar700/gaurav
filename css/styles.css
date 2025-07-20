@@ -517,12 +517,25 @@ img {
 
 /*===== SERVICES =====*/
 .services__data {
-    padding: 3rem 1rem;
+    /* padding: 3rem 1rem;
     background-color: #FFF;
     border-radius: .5rem;
     text-align: center;
     transition: .4s;
-    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3); */
+
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: flex-start;
+    padding: 3rem 1rem;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+    height: 100%;
+    /* Ensure equal height if used with grid */
 }
 
 .services__icon,
@@ -541,6 +554,11 @@ img {
 
 .services__description {
     margin-bottom: var(--mb-4);
+}
+
+.services__data .button {
+    align-self: center;
+    margin-top: auto;
 }
 
 .services__data:hover {
